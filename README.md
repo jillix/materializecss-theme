@@ -4,8 +4,8 @@ A jillix theme based on the materializecss framework.
 ## Instalation
 [Ruby](http://www.ruby-lang.org/en/) and [compass](http://compass-style.org/) are required.
 
-#### Option 1 - Install using instalation script
-In `/instalation` folder scripts are available for automatic install of the tools.
+#### Option 1 - Install using script
+In `/install` folder, scripts are available for automatic install of the tools.
 You need to select your script based on your operating system. (OS X, Debian, Fedora, Archlinux)
 
 #### Option 2 - Install manualy
