@@ -1,0 +1,26 @@
+{
+  "name": "materializecss-theme",
+  "version": "1.0.0",
+  "description": "A jillix theme based on the materializecss framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jillix/materializecss-theme.git"
+  },
+  "keywords": [
+    "jillix"
+  ],
+  "author": "jillix <contact@jillix.com>",
+  "contributors": [
+      "Adrian Ottiker <adrian@ottiker.com>",
+      "Szabo Cristian <lcristianiim@gmail.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jillix/materializecss-theme/issues"
+  },
+  "homepage": "https://github.com/jillix/materializecss-theme#readme"
+}
