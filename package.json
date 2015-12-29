@@ -1,6 +1,6 @@
 {
   "name": "materializecss-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A jillix theme based on the materializecss framework.",
   "main": "index.js",
   "scripts": {
