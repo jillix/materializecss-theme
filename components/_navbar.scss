@@ -3,7 +3,7 @@ nav {
   @extend .z-depth-1;
   background-color: white;
   width: 100%;
-  height: $navbar-height-mobile;
+  min-height: $navbar-height-mobile;
   line-height: $navbar-height-mobile;
 
   a { color: $navbar-font-color; }
@@ -162,7 +162,7 @@ nav {
 }
 @media #{$medium-and-up} {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: $navbar-height;
+    min-height: $navbar-height;
     line-height: $navbar-height;
   }
   .navbar-fixed {
