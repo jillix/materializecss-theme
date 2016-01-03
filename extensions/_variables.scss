@@ -1,0 +1,63 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Breaks
+$break-sm: 48em;
+$break-md: 64em;
+$break-lg: 75em;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$hello: black;
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+//== Scaffolding
+//
+
+//** Background color for `<body>`.
+$body-bg: #f0f0f7;
+//** Global text color on `<body>`.
+$text-color: $gray;
+
+
+//== Typography
+
+/* fonts */
+$regular: "regular";
+$light: "light";
+$bold: "bold";
+@include font-face($regular, font-files("/fonts/TitilliumWeb-Regular.ttf"));
+@include font-face($light, font-files("/fonts/TitilliumWeb-Light.ttf"));
+@include font-face($light, font-files("/public/fonts/TitilliumWeb-Bold.ttf"));
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-medium:        ceil(($font-size-base * 1.14)) !default; // ~16px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-s1: 3.5em;
+$font-size-s2: 2em;
+$font-size-s3: 1.5em;
+$font-size-s4: 1.2em;
