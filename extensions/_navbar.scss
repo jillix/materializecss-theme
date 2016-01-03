@@ -1,11 +1,69 @@
-.e-mobile-nav {
-    padding-top: 64px;
+.public-brand {
+    margin-left: 6em;
+    flex: 1;
+}
 
-    li {
-        float: initial;
+.public-brand img {
+    width: 9.5em;
+}
 
-        a {
+.main-nav {
+    .to-hide-nav li {
+        display: inline;
+    }
+}
+
+.jillix-logo {
+    width: 100px;
+    cursor: pointer;
+    vertical-align: sub;
+    padding-left: 15px;
+    @media screen and (max-width: $break-sm) {
+        width: 95px;
+    }
+}
+
+.nav-toggle-btn {
+    display: none;
+     @media screen and (max-width: $break-sm) {
+         display: block;
+       }
+}
+
+.to-hide-nav {
+    @media screen and (max-width: $break-sm) {
+        display: none;
+    }
+}
+
+.small-screen {
+    ul {
+        padding-left: 0;
+        margin-top: 0;
+        li {
             text-align: center;
+            padding-top: 8px;
+            padding-bottom: 10px;
         }
     }
+    @media screen and (min-width: $break-sm) {
+        display: none;
+    }
+}
+
+.navbar-container {
+    @include display-flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+}
+
+.menu-icon {
+    width: 40px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.show {
+    display: block;
 }
