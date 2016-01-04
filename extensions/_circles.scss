@@ -1,0 +1,103 @@
+.circle {
+    width: 150px;
+    height: 150px;
+}
+
+/* entire container, keeps perspective */
+.circle-container, .circle-container-no-flip {
+    perspective: 1000;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+/* flip the pane when hovered */
+.circle-container:hover .circle, .circle-container.hover .circle {
+    transform: rotateY(180deg);
+}
+.circle-front, .circle-back {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle-front p, .circle-back p {
+    font-size: 23px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.circle-front .type {
+    flex: 0;
+}
+
+.circle-readme {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    top: 110px;
+    left: 40px;
+    text-decoration: underline;
+}
+
+.circle-builder, .circle-deployment, .circle-settings {
+    font-size: 15px;
+    margin: 5px;
+}
+.circle-builder:hover, .circle-deployment:hover, .circle-settings:hover {
+    text-decoration: underline;
+}
+
+/* flip speed goes here */
+.circle {
+    transition: 0.4s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.circle-front, .circle-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #5a6979;
+    -webkit-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    color: #5a6979;
+}
+
+/* front pane, placed above back */
+.circle-front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.circle-back {
+    transform: rotateY(180deg);
+}
+
+.plus-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #3f85ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plus-circle span {
+    color: #3f85ca;
+}

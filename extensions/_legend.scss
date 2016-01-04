@@ -1,0 +1,32 @@
+.legend {
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.light-description {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.legend-light {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.legend-details {
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    min-width: 85px;
+}
+
+.new-title {
+    color: #3f85ca;
+    padding-top: 7px;
+    text-align: center;
+}
