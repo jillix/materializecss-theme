@@ -1,8 +1,57 @@
 .page-header {
+    @include display-flex;
+    @include align-items(center);
     background: $page-header;
     color: white;
+    height: 56px;
 
-    h3 {
+    h5 {
         margin: 0;
     }
+}
+
+.section-content {
+    background: #FBFBFB;
+}
+
+.legend {
+    max-width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.light-description {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.legend-light {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.legend-details {
+    margin-top: 25px;
+    min-width: 85px;
+}
+
+.plus-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #3f85ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plus-circle span {
+    color: #3f85ca;
 }
