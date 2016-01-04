@@ -15,8 +15,6 @@
 }
 
 .legend {
-    max-width: 200px;
-    height: 200px;
     margin-top: 20px;
 }
 
@@ -37,13 +35,16 @@
 }
 
 .legend-details {
-    margin-top: 25px;
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,0.12);
     min-width: 85px;
 }
 
 .plus-circle {
     width: 80px;
     height: 80px;
+    margin: 0 auto;
     border-radius: 50%;
     border: 3px solid #3f85ca;
     display: flex;
@@ -54,4 +55,10 @@
 
 .plus-circle span {
     color: #3f85ca;
+}
+
+.new-title {
+    color: #3f85ca;
+    padding-top: 7px;
+    text-align: center;
 }
