@@ -3,6 +3,9 @@ body {
     font-size: $font-size-base;
     color: $text-color;
     margin: 0;
+    @include display-flex;
+    @include flex-direction(column);
+    min-height: 100vh;
 }
 
 ul {
