@@ -1,35 +1,17 @@
 footer {
     background-color: #9ca2b8;
     color: #212121;
-    margin-top: 250px;
 }
 
 .footer-links {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 48px;
     @include display-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     @media screen and (max-width: $break-sm) {
         text-align: center;
-    }
-}
-
-.footer-companies {
-    width: 80%;
-    margin: 0 auto;
-    @include display-flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 170px;
-    flex-wrap: wrap;
-    padding-top: 100px;
-    @media screen and (max-width: $break-md) {
-        width: 80%;
-    }
-    @media screen and (max-width: $break-sm) {
-        padding-top: 75px;
-        padding-bottom: 70px;
     }
 }
 
