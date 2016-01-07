@@ -1,5 +1,33 @@
 .material-form {
+
     .section {
         border-top: 1px solid rgba(0,0,0,0.12);
+        margin-top: 64px;
+        padding-top: 64px;
+    }
+
+    .section:first-child {
+        border-top: 0;
+        margin-top: 0;
+    }
+
+    .section:last-child {
+        border-bottom: 1px solid rgba(0,0,0,0.12);
+        margin-bottom: 64px;
+        padding-bottom: 64px;
+    }
+
+    .collection-item {
+        .active {
+            left: 0;
+        }
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
     }
 }
