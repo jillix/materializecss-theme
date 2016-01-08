@@ -39,6 +39,19 @@
         .items {
             color: #737373;
         }
+
+        .item-cont {
+            @include display-flex();
+            label {
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            .switch {
+                margin-top: -3px;
+            }
+        }
     }
 
 }
