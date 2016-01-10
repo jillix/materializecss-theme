@@ -1,4 +1,13 @@
 .material-form {
+    .collection {
+        .registered-emails {
+            cursor: pointer;
+        }
+
+        .set-primary-emails {
+            background: #FBFBFB;
+        }
+    }
 
     .section {
         border-top: 1px solid rgba(0,0,0,0.12);
@@ -23,6 +32,10 @@
         }
     }
 
+    .pointer {
+        cursor: pointer;
+    }
+
     .title {
         font-size: 36px;
     }
@@ -42,6 +55,18 @@
 
         .item-cont {
             @include display-flex();
+            @include align-items(center);
+            @include justify-content(space-between);
+            padding-bottom: 17px;
+
+            .email {
+                flex: 1;
+            }
+
+            .trash {
+                cursor: pointer;
+            }
+
             label {
                 position: relative;
                 top: 0;
