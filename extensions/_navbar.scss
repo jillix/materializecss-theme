@@ -110,7 +110,7 @@ nav .octicon {
     border: 1px solid #ccc;
     position: absolute;
     min-width: 190px;
-    right: 31px;
+    right: 40px;
     text-align: left;
     z-index: 4;
     top: 56px;
@@ -118,6 +118,21 @@ nav .octicon {
     li {
         width: 100%;
         line-height: 52px;
+    }
+}
+
+.dropdown2 {
+    .direction-toggle {
+        width: 220px;
+        right: 81px;
+    }
+
+    .direction-arrow {
+        right: 101px;
+    }
+
+    .direction-arrow-b {
+        right: 101px;
     }
 }
 
