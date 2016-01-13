@@ -10,11 +10,33 @@
     }
 }
 
+#page-content {
+    flex: 1;
+    @include display-flex;
+    @include flex-direction(column);
+}
+
+.pages-container {
+    @include display-flex;
+    @include flex-direction(column);
+    flex: 1;
+}
+
 .section-content {
     background: #FBFBFB;
     flex: 1;
 }
 
 .card-title {
-    color: rgba(0, 0, 0, 0.87);
+    color: #555555;
+}
+
+.closable-collection {
+    .card-title {
+        @include display-flex;
+        @include justify-content(space-between);
+        .octicon-x {
+            cursor: pointer;
+        }
+    }
 }

@@ -30,6 +30,12 @@
         .active {
             left: 0;
         }
+
+        .flex-input-field {
+            @include display-flex;
+            @include justify-content(space-between);
+            @include align-items(center);
+        }
     }
 
     .pointer {
