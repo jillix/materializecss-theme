@@ -13,7 +13,6 @@
 #page-content {
     @include display-flex;
     @include flex-direction(column);
-    height: 100%;
 }
 
 .pages-container {
