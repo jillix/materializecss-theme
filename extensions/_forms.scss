@@ -13,11 +13,12 @@
         border-top: 1px solid rgba(0,0,0,0.12);
         margin-top: 64px;
         padding-top: 64px;
+        display: initial;
     }
 
     .section:first-child {
         border-top: 0;
-        margin-top: 0;
+        padding-top: 64px;
     }
 
     .section:last-child {
@@ -88,10 +89,31 @@
 
 // 3d form
 // ==========
+
 .signup-viewport {
     @include perspective(10000000px);
     position: relative;
     width: 100%;
+}
+
+.signup-viewport.front-height {
+    height: 595px;
+    transition: all 1s linear;
+}
+
+.signup-viewport.right-height {
+    height: 388px;
+    transition: all 1s linear;
+}
+
+.signup-viewport.back-height {
+    height: 760px;
+    transition: all 1s linear;
+}
+
+.signup-viewport.left-height {
+    height: 440px;
+    transition: all 1s linear;
 }
 
 .cube {
@@ -130,20 +152,9 @@
     .front, .back, .left, .right, .top, .bottom {
         width: 100%;
         position: absolute;
-        opacity : 0;
-        width: 0;
-        height: 0;
-        transition: all, 1s linear;
-
+        opacity: 1;
         border: 1px solid rgb(225, 225, 225);
         @include backface-visibility(hidden);
-    }
-
-    .display-face {
-        opacity: 1;
-        position: relative;
-        width: 100%;
-        height: 100%;
     }
 
     .side-container {
