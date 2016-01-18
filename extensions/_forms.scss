@@ -12,12 +12,10 @@
     .section {
         border-top: 1px solid rgba(0,0,0,0.12);
         margin-top: 64px;
-        padding-top: 64px;
     }
 
     .section:first-child {
         border-top: 0;
-        padding-top: 64px;
     }
 
     .section:last-child {
