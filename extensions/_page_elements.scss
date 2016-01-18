@@ -13,6 +13,7 @@
 #page-content {
     @include display-flex;
     @include flex-direction(column);
+    flex: 1;
 }
 
 .pages-container {
