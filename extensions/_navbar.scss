@@ -1,3 +1,6 @@
+// Main navbar
+// ==============
+
 .public-brand {
     margin-left: 6em;
     flex: 1;
@@ -136,3 +139,47 @@ nav .octicon {
     }
 }
 
+// Navbar s-1
+// =============
+
+$ns1-background: #fcfcfc;
+$arrow-angle: 24px;
+
+.navbar-s1 {
+
+    @include display-flex;
+    @include align-items(center);
+    background: $ns1-background;
+    border-bottom: 1px solid #f2f2f2;
+    color: #444;
+
+    .right {
+        border-color: transparent transparent transparent #E4E4E4;
+        border-style: solid;
+        border-width: $arrow-angle;
+        width: 0;
+        height: 0;
+        margin-left: 30px;
+
+        div {
+            border-color: transparent transparent transparent $ns1-background;
+            border-style: solid;
+            border-width: $arrow-angle;
+            width: 0;
+            height: 0;
+            position: relative;
+            top: -$arrow-angle;
+            left: -($arrow-angle + 2);
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
+}
