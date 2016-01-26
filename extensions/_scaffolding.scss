@@ -25,3 +25,8 @@ a {
 .center-auto {
     margin: 0 auto;
 }
+
+.vertical-center {
+    @include display-flex;
+    @include align-items(center);
+}
