@@ -30,3 +30,7 @@ a {
     @include display-flex;
     @include align-items(center);
 }
+
+.pointer {
+    cursor: pointer;
+}
