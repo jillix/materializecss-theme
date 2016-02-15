@@ -1,6 +1,6 @@
 footer {
-    background-color: #9ca2b8;
-    color: #212121;
+    background-color: $jb-dark-grey;
+    color: $jb-light-blue;
 }
 
 .footer-links {
@@ -28,7 +28,7 @@ footer {
 
     a {
         font-size: $font-size-s4;
-        color: #212121;
+        color: $jb-light-blue;
     }
 }
 
