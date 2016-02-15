@@ -23,8 +23,12 @@
 }
 
 .section-content {
-    background: #FBFBFB;
+    background: $jb-light-blue;
     flex: 1;
+
+    .card {
+        background: $jb-medium-blue;
+    }
 }
 
 .card-title {
