@@ -16,6 +16,19 @@
     }
 }
 
+.private-nav {
+    background: $jb-dark-grey;
+
+    a {
+        color: $jb-light-blue;
+    }
+
+    .card {
+        background: $jb-dark-grey;
+        color: $jb-light-blue;
+    }
+}
+
 .jillix-logo {
     width: 100px;
     cursor: pointer;
@@ -131,11 +144,16 @@ nav .octicon {
     }
 
     .direction-arrow {
-        right: 101px;
+        right: 102px;
     }
 
     .direction-arrow-b {
-        right: 101px;
+        right: 102px;
+    }
+
+    .card {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.55), 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+        border: 0;
     }
 }
 
