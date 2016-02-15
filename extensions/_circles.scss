@@ -91,7 +91,7 @@
     height: 80px;
     margin: 0 auto;
     border-radius: 50%;
-    border: 3px solid #3f85ca;
+    background: $jb-dark-grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,5 +99,5 @@
 }
 
 .plus-circle span {
-    color: #3f85ca;
+    color: $jb-light-blue;
 }
