@@ -41,3 +41,15 @@ a {
 .j-blue { background: $j-blue; }
 .j-orange { background: $j-orange; }
 .j-brown { background: $j-brown; }
+
+.j-red-hover { background: $j-red; &:hover { background: lighten($j-red, 4%) }}
+.j-green-hover { background: $j-green; &:hover { background: lighten($j-green, 4%) }}
+.j-blue-hover { background: $j-blue; &:hover { background: lighten($j-blue, 4%) }}
+.j-orange-hover { background: $j-orange; &:hover { background: lighten($j-orange, 4%) }}
+.j-brown-hover { background: $j-brown; &:hover { background: lighten($j-orange, 4%) }}
+
+.j-red-text { color: $j-red !important;}
+.j-green-text { color: $j-green !important; }
+.j-blue-text { color: $j-blue !important; }
+.j-orange-text { color: $j-orange !important; }
+.j-brown-text { color: $j-brown !important; }
