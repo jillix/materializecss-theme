@@ -1,4 +1,13 @@
 .material-form {
+    label {
+        color: $jb-dark-grey;
+    }
+    .input-field {
+        label {
+            color: $jb-dark-grey;
+        }
+    }
+
     .collection {
         .registered-emails {
             cursor: pointer;
@@ -33,6 +42,8 @@
     }
 
     .collection-item {
+        background: $jb-light-blue;
+
         .active {
             left: 0;
         }
