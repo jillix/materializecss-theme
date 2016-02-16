@@ -9,7 +9,6 @@
     }
 
     .collection {
-        @extend .z-depth-1;
         .registered-emails {
             cursor: pointer;
         }
