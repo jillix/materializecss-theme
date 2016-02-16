@@ -96,6 +96,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    @extend .z-depth-1;
+    transition: .2s ease-out;
+
+    &:hover {
+        background: lighten($jb-dark-grey, 4%);
+        @extend .z-depth-2;
+    }
 }
 
 .plus-circle span {
