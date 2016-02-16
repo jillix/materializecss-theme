@@ -48,7 +48,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: lighten($button-color, 5%);
+    background-color: lighten($j-green, 4%);
     @extend .z-depth-1-half;
   }
 }
@@ -64,7 +64,7 @@
   height: $button-floating-size;
   line-height: $button-floating-size;
   padding: 0;
-  background-color: $button-color;
+  background-color: $j-green;
   border-radius: 50%;
   @extend .z-depth-1;
   transition: .3s;
@@ -81,7 +81,7 @@
   }
 
   &:hover {
-    background-color: $button-color;
+    background-color: $j-green;
     @extend .z-depth-1-half;
   }
   &:before {
