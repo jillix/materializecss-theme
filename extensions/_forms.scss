@@ -1,7 +1,19 @@
 .material-form {
+
+    .profile-circle {
+        @extend .z-depth-1;
+    }
+
+    .sub-icon:hover {
+        color: $jb-dark-grey;
+        transition: all .2s ease-out ;
+        @extend .pointer;
+    }
+
     label {
         color: $jb-dark-grey;
     }
+
     .input-field {
         label {
             color: $jb-dark-grey;
@@ -11,10 +23,6 @@
     .collection {
         .registered-emails {
             cursor: pointer;
-        }
-
-        .set-primary-emails {
-            background: #FBFBFB;
         }
     }
 
