@@ -32,7 +32,7 @@
 .jillix-logo {
     width: 100px;
     cursor: pointer;
-    vertical-align: sub;
+    vertical-align: text-bottom;
     padding-left: 15px;
     @media screen and (max-width: $break-sm) {
         width: 95px;
