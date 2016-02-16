@@ -535,7 +535,12 @@ td, th{
 
 
     &:last-child {
-      border-bottom: none;
+        border-bottom: none;
+        border-top: 1px solid $collection-border-color;
+    }
+
+    &:nth-last-child(2) {
+        border-bottom: none;
     }
 
     &.active {
