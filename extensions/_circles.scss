@@ -11,7 +11,18 @@
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    cursor: pointer;
+    cursor: auto;
+
+    .circle-details {
+        @include display-flex;
+        @include flex-direction(column);
+        @include align-items(center);
+    }
+
+    .base {
+        margin-bottom: 10px;
+        cursor: auto;
+    }
 }
 /* flip the pane when hovered */
 .circle-container:hover .circle, .circle-container.hover .circle {
@@ -86,25 +97,87 @@
     transform: rotateY(180deg);
 }
 
-.plus-circle {
+.circle-item {
     width: 80px;
     height: 80px;
-    margin: 0 auto;
     border-radius: 50%;
     background: $jb-dark-grey;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    @extend .z-depth-2;
+    @extend .z-depth-1;
     transition: .2s ease-out;
 
     &:hover {
         background: lighten($jb-dark-grey, 4%);
-        @extend .z-depth-3;
+        @extend .z-depth-2;
     }
 }
 
-.plus-circle span {
+.circle-list-item {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: $jb-dark-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @extend .z-depth-1;
+    transition: .2s ease-out;
+
+    &:hover {
+        background: lighten($jb-dark-grey, 4%);
+        @extend .z-depth-2;
+    }
+}
+
+.circle-item span, .circle-list-item, .circle-submenu {
     color: $jb-light-blue;
+}
+
+.options-container {
+    margin-top: 15px;
+    @include display-flex;
+    @include justify-content(center);
+    visibility: hidden;
+    &.active {
+        visibility: visible;
+    }
+}
+
+.circle-area {
+    @include display-flex;
+    @include align-items(center);
+    @include flex-direction(column);
+}
+
+.circle-submenu {
+    transform: scaleY(0.4) scaleX(0.4) translateY(-40px) translateX(-40px); opacity: 0;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    @extend .z-depth-1;
+    transition: .2s ease-out;
+    opacity: 0;
+
+    &:hover {
+        @extend .z-depth-2;
+    }
+
+    span {
+        font-size: 26px;
+    }
+
+}
+
+.circle-submenu.active {
+    transform: scaleY(1) scaleX(1) translateY(0px) translateX(0px); opacity: 100;
 }
