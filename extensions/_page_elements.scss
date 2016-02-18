@@ -53,3 +53,8 @@
 .projects-container, .versions-container {
     margin-top: 30px;
 }
+
+.app-deploy {
+    @include display-flex;
+    flex: 1;
+}
