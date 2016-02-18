@@ -209,3 +209,14 @@
         }
     }
 }
+
+.versions-container {
+    .circle-list-item {
+        span {
+            font-size: 70px;
+        }
+        span.octicon-triangle-right {
+            margin-left: 9px;
+        }
+    }
+}
