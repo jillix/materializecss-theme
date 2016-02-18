@@ -180,7 +180,14 @@ $arrow-angle: 24px;
     }
 
     .state {
-        padding-left: 28px;
+        margin-left: 28px;
+        margin-right: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+
+        @extend .z-depth-1;
     }
     .right {
         background-image: url("/images/right-arrow.svg");
