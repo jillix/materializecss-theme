@@ -18,6 +18,8 @@
 }
 
 .private-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
     background: $jb-dark-grey;
     @extend .z-depth-1;
 
@@ -32,12 +34,12 @@
 }
 
 .jillix-logo {
-    width: 100px;
+    width: 80px;
     cursor: pointer;
-    vertical-align: text-bottom;
+    vertical-align: sub;
     padding-left: 15px;
     @media screen and (max-width: $break-sm) {
-        width: 95px;
+        width: 80px;
     }
 }
 
