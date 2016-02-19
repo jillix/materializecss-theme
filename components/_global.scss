@@ -491,7 +491,7 @@ td, th{
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;
-    border-bottom: 1px solid $collection-border-color;
+    border-bottom: 1px solid #f3f6fa;
 
     // Avatar Collection
     &.avatar {
@@ -533,10 +533,13 @@ td, th{
 
     }
 
+    &:first-child {
+        border-top: 1px solid #f3f6fa;
+    }
 
     &:last-child {
         border-bottom: none;
-        border-top: 1px solid $collection-border-color;
+        border-top: 1px solid #f3f6fa;
     }
 
     &:nth-last-child(2) {
