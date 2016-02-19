@@ -139,6 +139,9 @@
 
 .circle-item span, .circle-list-item, .circle-submenu {
     color: $jb-light-blue;
+    span {
+        font-size: 30px;
+    }
 }
 
 .options-container {
@@ -217,12 +220,11 @@
     .circle-list-item {
 
         span {
-            font-size: 55px;
             color: $jb-medium-blue;
         }
 
         span.octicon-triangle-right {
-            margin-left: 9px;
+            margin-left: 4px;
         }
     }
 }
