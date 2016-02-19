@@ -33,6 +33,7 @@
 
 .card-title {
     color: #555555;
+    font-weight: bold;
 }
 
 .closable-collection {
@@ -51,7 +52,10 @@
 }
 
 .projects-container, .versions-container {
-    margin-top: 30px;
+    border-top: 2px solid;
+    padding-top: 19px;
+    margin-top: 18px;
+
 }
 
 .app-deploy {
