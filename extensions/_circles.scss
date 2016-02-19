@@ -113,6 +113,10 @@
     @extend .z-depth-1;
     transition: .2s ease-out;
 
+    i {
+        font-size: 30px;
+    }
+
     &:hover {
         background: lighten($jb-dark-grey, 4%);
         @extend .z-depth-2;
@@ -137,9 +141,10 @@
     }
 }
 
-.circle-item span, .circle-list-item, .circle-submenu {
+.circle-item i, .circle-list-item, .circle-submenu {
     color: $jb-light-blue;
-    span {
+
+    i {
         font-size: 30px;
     }
 }
@@ -162,8 +167,8 @@
 
 .circle-submenu {
     transform: scaleY(0.4) scaleX(0.4) translateY(-40px) translateX(-40px); opacity: 0;
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     margin-right: 5px;
     margin-left: 5px;
     border-radius: 50%;
@@ -180,8 +185,8 @@
         @extend .z-depth-2;
     }
 
-    span {
-        font-size: 26px;
+    i {
+        font-size: 20px;
     }
 
     img {
