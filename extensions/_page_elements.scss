@@ -61,7 +61,7 @@
     flex: 1;
 }
 
-input[type="text"] {
+input {
   @include input-placeholder {
     color: #787878 !important;
   }
