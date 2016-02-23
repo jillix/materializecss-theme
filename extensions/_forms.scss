@@ -61,6 +61,15 @@
             @include justify-content(space-between);
             @include align-items(center);
         }
+
+        .mdi {
+            font-size: 25px;
+            transition: all .2s ease-out;
+
+            &.rotate {
+                transform: rotateZ(90deg);
+            }
+        }
     }
 
     .pointer {
