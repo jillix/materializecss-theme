@@ -43,6 +43,7 @@ a {
 .j-orange { background: $j-orange; }
 .j-brown { background: $j-brown; }
 
+.jb-dark-grey-hover { background: $jb-dark-grey; &:hover { background: lighten($jb-dark-grey, 4%) }}
 .j-red-hover { background: $j-red; &:hover { background: lighten($j-red, 4%) }}
 .j-green-hover { background: $j-green; &:hover { background: lighten($j-green, 4%) }}
 .j-blue-hover { background: $j-blue; &:hover { background: lighten($j-blue, 4%) }}
