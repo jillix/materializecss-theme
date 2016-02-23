@@ -39,7 +39,7 @@
     .card-title {
         @include display-flex;
         @include justify-content(space-between);
-        .octicon-x {
+        .mdi-close {
             cursor: pointer;
         }
     }
@@ -50,11 +50,10 @@
     max-width: 240px;
 }
 
-.projects-container, .versions-container {
+.list-container {
     border-top: 2px solid;
     padding-top: 19px;
     margin-top: 18px;
-
 }
 
 .app-deploy {
