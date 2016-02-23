@@ -60,3 +60,9 @@
     @include display-flex;
     flex: 1;
 }
+
+input[type="text"] {
+  @include input-placeholder {
+    color: #787878 !important;
+  }
+}
