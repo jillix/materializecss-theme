@@ -31,6 +31,10 @@
         background: $jb-dark-grey;
         color: $jb-light-blue;
     }
+
+    ul li i {
+        font-size: 20px;
+    }
 }
 
 .jillix-logo {
@@ -119,7 +123,7 @@ nav .octicon {
     height: 0px;
     border-left: 8.5px solid transparent;
     border-right: 8.5px solid transparent;
-    border-bottom: 8.5px solid white;
+    border-bottom: 8.5px solid $jb-dark-grey;
     position: absolute;
     top: 57px;
     right: 53px;
@@ -144,15 +148,15 @@ nav .octicon {
 .dropdown2 {
     .direction-toggle {
         width: 220px;
-        right: 81px;
+        right: 0px;
     }
 
     .direction-arrow {
-        right: 102px;
+        right: 30px;
     }
 
     .direction-arrow-b {
-        right: 102px;
+        right: 30px;;
     }
 
     .card {
@@ -178,7 +182,6 @@ $arrow-angle: 24px;
 
     a {
         color: $jb-dark-grey;
-        font-weight: bold;
     }
 
     .state {
@@ -219,7 +222,8 @@ $arrow-angle: 24px;
             padding-right: 10px;
 
             &.active {
-                @extend .z-depth-1;
+                font-weight: bold;
+                text-decoration: underline;
             }
         }
 
