@@ -28,7 +28,15 @@
 
     .card {
         background: $jb-medium-blue;
+
+        .warning-bar {
+            padding-left: 10px;
+            padding-right: 10px;
+            @extend .j-orange;
+            @extend .white-text;
+        }
     }
+
 }
 
 .card-title {
