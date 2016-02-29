@@ -17,6 +17,13 @@
     }
 }
 
+.public-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: $jb-light-blue;
+    @extend .z-depth-1;
+}
+
 .private-nav {
     padding-left: 1rem;
     padding-right: 1rem;
