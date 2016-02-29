@@ -134,17 +134,17 @@
 }
 
 .signup-viewport.front-height {
-    height: 705px;
+    height: 600px;
     transition: all 1s linear;
 }
 
 .signup-viewport.right-height {
-    height: 388px;
+    height: 300px;
     transition: all 1s linear;
 }
 
 .signup-viewport.back-height {
-    height: 760px;
+    height: 650px;
     transition: all 1s linear;
 }
 
@@ -157,7 +157,6 @@
     width: 100%;
     position: relative;
     margin: 0 auto;
-    margin-top: 50px;
     @include transform-style(preserve-3D);
     @include rotateY(0deg);
     @include transition(all 1s);
