@@ -1,5 +1,10 @@
 .material-form {
 
+    .table-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
     .profile-circle {
         @extend .z-depth-1;
     }
@@ -35,6 +40,21 @@
             width: 150px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .title-container {
+            @include display-flex;
+            @include align-items(center);
+            cursor: pointer;
+
+            .mdi {
+                font-size: 50px;
+                transition: .2s all ease-out;
+            }
+
+            &.active .mdi {
+                transform: rotateZ(90deg);
+            }
         }
     }
 
