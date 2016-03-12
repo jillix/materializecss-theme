@@ -195,6 +195,23 @@ $arrow-angle: 24px;
         color: $jb-dark-grey;
     }
 
+}
+
+.navbar-s2 {
+
+    @include display-flex;
+    @include align-items(center);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+
+    background: $jb-medium-blue;
+    @extend .z-depth-1;
+
+    .breadcrumb-links {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
     .state {
         margin-left: 28px;
         margin-right: 28px;
@@ -205,39 +222,11 @@ $arrow-angle: 24px;
 
         @extend .z-depth-1;
     }
-    .right {
-        background-image: url("/images/right-arrow.svg");
-        margin-right: 30px;
-        width: 20px;
-        height: 35px;
 
-        div {
-            border-color: transparent transparent transparent $jb-medium-blue;
-            border-style: solid;
-            border-width: $arrow-angle;
-            width: 0;
-            height: 0;
-            position: relative;
-            top: -$arrow-angle;
-            left: -($arrow-angle + 2);
-        }
+    a {
+        color: $jb-dark-grey;
     }
 
-    ul {
-        @include display-flex;
-        @include flex-wrap(wrap);
-
-        li {
-            padding-left: 10px;
-            padding-right: 10px;
-
-            &.active {
-                font-weight: bold;
-                text-decoration: underline;
-            }
-        }
-
-    }
 
     .breadcrumb-menu {
         padding-left: 30px;
@@ -260,6 +249,25 @@ $arrow-angle: 24px;
 
         li:last-child:after {
             content: "";
+            padding-right: 0;
         }
+    }
+
+    ul {
+        @include display-flex;
+        @include flex-wrap(wrap);
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &.active {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+
     }
 }
