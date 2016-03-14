@@ -7,7 +7,62 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
     color: $jb-dark-grey;
     margin-bottom: 1px;
 
-    a {
+    ul {
+        margin: 0;
+
+        .li-item {
+            float: left;
+        }
+    }
+
+    ul li {
+        &:first-of-type .item {
+            padding-left: 15px;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &:hover .item {
+            background: $linkColorHover;
+            color: #fff;
+            text-decoration: none;
+            @extend .z-depth-1;
+
+            &:before {
+                border-color: $linkColorHover;
+                border-left-color: transparent;
+            }
+
+            &:after {
+                border-left-color: $linkColorHover;
+            }
+        }
+
+        &:last-of-type .item {
+            background: $linkColorLast;
+            color: #fff;
+            text-decoration: none;
+            cursor: default;
+
+            &:before {
+                border-color: $linkColorLast;
+                border-left-color: transparent;
+            }
+
+            &:after {
+                border-left-color: $linkColorLast;
+            }
+        }
+
+        &:last-of-type:hover .item {
+            @extend .z-depth-0;
+        }
+
+    }
+
+    .item {
         display: block;
         float: left;
         background: $jb-dark-grey;
@@ -45,48 +100,25 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
             border-left-color: $jb-dark-grey;
         }
 
-        &:first-of-type {
-            padding-left: 15px;
+    }
 
-            &:before {
-                display: none;
-            }
-        }
+    .submenu {
+        position: absolute;
+        background: $jb-dark-grey;
+        margin-top: 32px;
+        z-index: 1;
 
-
-        &:hover {
-            background: $linkColorHover;
-            color: #fff;
-            text-decoration: none;
-            @extend .z-depth-1;
-
-            &:before {
-                border-color: $linkColorHover;
-                border-left-color: transparent;
-            }
-
-            &:after {
-                border-left-color: $linkColorHover;
-            }
-        }
-
-        &:last-of-type {
-            background: $linkColorLast;
-            color: #fff;
-            text-decoration: none;
-            cursor: default;
+        li {
+            display: block;
+            padding-left: 20px;
+            padding-right: 20px;
 
             &:hover {
-                @extend .z-depth-0;
+                background: $linkColorHover;
             }
 
-            &:before {
-                border-color: $linkColorLast;
-                border-left-color: transparent;
-            }
-
-            &:after {
-                border-left-color: $linkColorLast;
+            a {
+                color: $jb-light-blue;
             }
         }
     }
