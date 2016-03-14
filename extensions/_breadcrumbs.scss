@@ -63,7 +63,10 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
     }
 
     .item {
-        display: block;
+        display: flex;
+        @include display-flex;
+        @include align-items(center);
+        @include flex-direction(row-reverse);
         float: left;
         background: $jb-dark-grey;
         padding-right: 10px;
@@ -107,6 +110,15 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
         background: $jb-dark-grey;
         margin-top: 32px;
         z-index: 1;
+        transform: scaleY(0.4) scaleX(0.4);
+        transition: .1s ease-out;
+        opacity: 0;
+
+
+        &.active {
+	    transform: scaleY(1) scaleX(1);
+            opacity: 100;
+        }
 
         li {
             display: block;
