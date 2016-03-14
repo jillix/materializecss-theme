@@ -1,0 +1,119 @@
+// Breadcrumb s1 - recomended to be used inside .navbar-s2
+$linkColorHover: darken($jb-dark-grey, 5%);
+$linkColorLast: lighten($jb-dark-grey, 5%);
+
+.breadcrumb {
+    line-height: 30px;
+    color: $jb-dark-grey;
+    margin-bottom: 1px;
+
+    a {
+        display: block;
+        float: left;
+        background: $jb-dark-grey;
+        padding-right: 10px;
+        height: 30px;
+        margin-right: 31px;
+        position: relative;
+        text-decoration: none;
+        color: $jb-light-blue;
+        margin-top: 1px;
+        margin-bottom: 1px;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            left: -30px;
+            border: 15px solid transparent;
+            border-color: $jb-dark-grey;
+            border-left-color: transparent;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right: -30px;
+            border: 15px solid transparent;
+            border-left-color: $jb-dark-grey;
+        }
+
+        &:first-of-type {
+            padding-left: 15px;
+
+            &:before {
+                display: none;
+            }
+        }
+
+
+        &:hover {
+            background: $linkColorHover;
+            color: #fff;
+            text-decoration: none;
+            @extend .z-depth-1;
+
+            &:before {
+                border-color: $linkColorHover;
+                border-left-color: transparent;
+            }
+
+            &:after {
+                border-left-color: $linkColorHover;
+            }
+        }
+
+        &:last-of-type {
+            background: $linkColorLast;
+            color: #fff;
+            text-decoration: none;
+            cursor: default;
+
+            &:hover {
+                @extend .z-depth-0;
+            }
+
+            &:before {
+                border-color: $linkColorLast;
+                border-left-color: transparent;
+            }
+
+            &:after {
+                border-left-color: $linkColorLast;
+            }
+        }
+    }
+}
+
+// Breadcrumbs s1 links
+.breadcrumb-links {
+    padding-right: 20px;
+}
+
+a {
+    color: $jb-dark-grey;
+}
+
+.breadcrumb-links {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    .item {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

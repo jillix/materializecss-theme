@@ -198,7 +198,6 @@ $arrow-angle: 24px;
 }
 
 .navbar-s2 {
-
     @include display-flex;
     @include align-items(center);
     @include flex-wrap(wrap);
@@ -207,67 +206,4 @@ $arrow-angle: 24px;
     background: $jb-medium-blue;
     @extend .z-depth-1;
 
-    .breadcrumb-links {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .state {
-        margin-left: 28px;
-        margin-right: 28px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border-radius: 10px;
-        font-weight: bold;
-
-        @extend .z-depth-1;
-    }
-
-    a {
-        color: $jb-dark-grey;
-    }
-
-
-    .breadcrumb-menu {
-        padding-left: 30px;
-
-        li {
-            padding-right: 0;
-            padding-left: 0;
-            cursor: pointer;
-        }
-
-        li:last-child {
-            font-weight: bold;
-        }
-
-        li:after {
-            content: " /";
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        li:last-child:after {
-            content: "";
-            padding-right: 0;
-        }
-    }
-
-    ul {
-        @include display-flex;
-        @include flex-wrap(wrap);
-        margin-top: 7px;
-        margin-bottom: 7px;
-
-        li {
-            padding-left: 10px;
-            padding-right: 10px;
-
-            &.active {
-                font-weight: bold;
-                text-decoration: underline;
-            }
-        }
-
-    }
 }
