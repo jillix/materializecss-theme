@@ -1,6 +1,6 @@
 // Breadcrumb s1 - recomended to be used inside .navbar-s2
 $linkColorHover: darken($jb-dark-grey, 5%);
-$linkColorLast: lighten($jb-dark-grey, 5%);
+$linkColorLast: lighten($jb-dark-grey, 15%);
 
 .breadcrumb {
     line-height: 30px;
@@ -28,7 +28,6 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
             background: $linkColorHover;
             color: #fff;
             text-decoration: none;
-            @extend .z-depth-1;
 
             &:before {
                 border-color: $linkColorHover;
@@ -44,7 +43,6 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
             background: $linkColorLast;
             color: #fff;
             text-decoration: none;
-            cursor: default;
 
             &:before {
                 border-color: $linkColorLast;
@@ -57,7 +55,19 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
         }
 
         &:last-of-type:hover .item {
-            @extend .z-depth-0;
+            background: $jb-dark-grey;
+            color: #fff;
+            text-decoration: none;
+
+            &:before {
+                border-color: $jb-dark-grey;
+                border-left-color: transparent;
+            }
+
+            &:after {
+                border-left-color: $jb-dark-grey;
+            }
+
         }
 
     }
@@ -76,7 +86,6 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
         text-decoration: none;
         color: $jb-light-blue;
         margin-top: 1px;
-        margin-bottom: 1px;
 
         &:before {
             content: "";
@@ -115,12 +124,11 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
     .submenu {
         position: absolute;
         background: $jb-dark-grey;
-        margin-top: 32px;
+        margin-top: 31px;
         z-index: 1;
-        transform: scaleY(0.4) scaleX(0.4);
-        transition: .1s ease-out;
+        transform: scaleY(0) scaleX(0);
         opacity: 0;
-
+        transition: .1s ease-out;
 
         &.active {
 	    transform: scaleY(1) scaleX(1);
@@ -131,6 +139,7 @@ $linkColorLast: lighten($jb-dark-grey, 5%);
             display: block;
             padding-left: 30px;
             padding-right: 30px;
+            transition: .1 ease-out;
 
             &:hover {
                 background: $linkColorHover;
@@ -155,8 +164,8 @@ a {
 .breadcrumb-links {
     @include display-flex;
     @include flex-wrap(wrap);
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
     .item {
         padding-left: 10px;
