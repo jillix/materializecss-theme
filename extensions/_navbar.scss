@@ -109,11 +109,6 @@ nav .octicon {
     padding-left: 5px;
 }
 
-.dropdown1 {
-    position: absolute;
-    right: 301px;
-}
-
 .direction-arrow {
     width: 0px;
     height: 0px;
@@ -152,7 +147,7 @@ nav .octicon {
     }
 }
 
-.dropdown2 {
+.dropdown1 {
     .direction-toggle {
         width: 220px;
         right: 0px;
@@ -169,6 +164,12 @@ nav .octicon {
     .card {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.55), 0 2px 10px 0 rgba(0, 0, 0, 0.5);
         border: 0;
+    }
+}
+
+.mobile-nav {
+    @media screen and (min-width: $break-sm) {
+        display: none;
     }
 }
 
