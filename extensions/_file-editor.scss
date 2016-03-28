@@ -1,6 +1,7 @@
 // variables
 $main-background: $jb-light-blue;
 $side-bar-color: $jb-medium-blue;
+$tab-border-color: darken($main-background, 13.5%) !default;
 
 .file-editor {
     flex: 1;
@@ -26,6 +27,33 @@ $side-bar-color: $jb-medium-blue;
     margin-bottom: 10px;
     @extend .z-depth-1;
 
+    .tabs {
+        display: flex;
+        margin-top: 0;
+        background: $jb-light-blue;
+
+        li {
+            flex: 1;
+            max-width: 170px;
+            border-left: 1px solid $tab-border-color;
+            background: $jb-light-blue;
+            height: 30px;
+            @include display-flex;
+            @include align-items(center);
+            @include justify-content(center);
+            cursor: pointer;
+
+            &:last-child {
+                border-right: 1px solid $tab-border-color;
+            }
+
+            &.active {
+                background: $side-bar-color;
+                border-left: 1px solid $j-blue;
+            }
+        }
+    }
+
 
     .file-edit {
         flex: 1;
@@ -41,6 +69,10 @@ $side-bar-color: $jb-medium-blue;
         .item {
             padding-left: 10px;
             padding-right: 10px;
+
+            i {
+                margin-right: 5px;
+            }
         }
     }
 }
