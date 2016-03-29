@@ -142,7 +142,7 @@
                 flex: 1;
             }
 
-            .trash {
+            .mdi-delete {
                 cursor: pointer;
             }
 
@@ -154,6 +154,10 @@
 
             .switch {
                 margin-top: -3px;
+            }
+
+            .input-field {
+                margin-top: 0;
             }
         }
     }
