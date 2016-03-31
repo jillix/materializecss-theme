@@ -7,40 +7,6 @@
     }
 }
 
-.manage-org {
-    margin-left: 110px;
-
-    @media screen and (max-width: $break-xs) {
-        margin-left: 0;
-    }
-
-    a {
-        @include display-flex;
-        @include align-items(center);
-    }
-
-    .submenu {
-	position: absolute;
-        background: $jb-dark-grey;
-        z-index: 1;
-        transform: scaleY(0) scaleX(0);
-        opacity: 0;
-        transition: .1s ease-out;
-	background: #39434E;
-        @extend .z-depth-1;
-
-        &.active {
-	    transform: scaleY(1) scaleX(1);
-            opacity: 100;
-        }
-
-        li {
-            float: none;
-            line-height: 52px;
-        }
-    }
-}
-
 .public-brand {
     margin-left: 6em;
     flex: 1;
