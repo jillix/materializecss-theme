@@ -1,3 +1,13 @@
+#debug_banner {
+    display: none;
+}
+
+.flex-container-sb {
+    @include display-flex;
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+}
+
 .page-header {
     @include display-flex;
     @include align-items(center);
@@ -77,4 +87,44 @@ input {
 
 .wrap-public, .page-home {
     background: $jb-light-blue;
+}
+
+.manage-org {
+    margin-left: 110px;
+    @include display-flex;
+    @include flex-wrap(wrap);
+
+    @media screen and (max-width: $break-xs) {
+        margin-left: 0;
+    }
+
+    a {
+        @include display-flex;
+        @include align-items(center);
+    }
+
+    li:nth-child(1) {
+        margin-right: 15px;
+    }
+
+    .collection {
+        margin-top: 0;
+    }
+
+    .collection-item {
+        background-color: $jb-light-blue;
+    }
+
+    .submenu {
+        position: absolute;
+        transform: scaleY(0) scaleX(0);
+        opacity: 0;
+        transition: .1s ease-out;
+        @extend .z-depth-1;
+
+        &.active {
+	    transform: scaleY(1) scaleX(1);
+            opacity: 100;
+        }
+    }
 }
