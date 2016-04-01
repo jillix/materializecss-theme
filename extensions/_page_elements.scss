@@ -109,6 +109,8 @@ input {
 
     .collection {
         margin-top: 0;
+        min-width: 191px;
+        z-index: 1;
     }
 
     .collection-item {
