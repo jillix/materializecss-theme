@@ -103,14 +103,21 @@ input {
         @include align-items(center);
     }
 
+    li {
+        position: relative;
+    }
+
     li:nth-child(1) {
         margin-right: 15px;
     }
 
     .collection {
+        position: absolute;
         margin-top: 0;
-        min-width: 191px;
+        min-width: 100%;
+        white-space: nowrap;
         z-index: 1;
+
     }
 
     .collection-item {
