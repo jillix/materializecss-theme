@@ -154,6 +154,15 @@ nav .octicon {
 }
 
 .dropdown1 {
+    transform: scaleY(0) scaleX(1);
+    opacity: 0;
+    transition: .1s all ease-out;
+
+    &.active {
+        transform: scaleY(1) scaleX(1);
+        opacity: 100;
+    }
+
     .direction-toggle {
         width: 220px;
         right: 0px;
