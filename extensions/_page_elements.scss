@@ -5,6 +5,7 @@
 .flex-container-sb {
     @include display-flex;
     @include justify-content(space-between);
+    @include align-items(center);
     @include flex-wrap(wrap);
 }
 
@@ -105,6 +106,7 @@ input {
 
     li {
         position: relative;
+        padding-top: 10px;
     }
 
     li:nth-child(1) {
