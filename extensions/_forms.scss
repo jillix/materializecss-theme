@@ -142,16 +142,24 @@
             @include display-flex;
             @include justify-content(space-between);
             @include align-items(center);
+            flex-wrap: wrap;
 
-            .search-field, .description {
-                flex: 1;
+            #search1 {
+                min-width: 100px;
             }
 
-            .description {
+            .search-field {
+                flex: 1;
+                margin-right: 20px;
+
+                @media screen and (max-width: $break-sm) {
+                }
+            }
+
+            .invite-member {
                 text-align: right;
 
                 @media screen and (max-width: $break-sm) {
-                   display: none;
                 }
             }
         }
