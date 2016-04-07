@@ -99,10 +99,61 @@
             left: 0;
         }
 
+        .users-list {
+            width: 100%;
+
+            li {
+                @include display-flex;
+                @include align-items(center);
+                border-bottom: 1px solid #D7D9DD;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            li:nth-child(1) {
+                padding-top: 0;
+            }
+
+            li:last-child {
+                padding-bottom: 1rem;
+            }
+
+            .details {
+                flex: 1;
+                @include align-items(center);
+
+                @include display-flex;
+                img {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+
+            .role {
+                margin-right: 15px;
+                flex: 1;
+                text-align: right;
+            }
+        }
+
         .flex-input-field {
             @include display-flex;
             @include justify-content(space-between);
             @include align-items(center);
+
+            .search-field, .description {
+                flex: 1;
+            }
+
+            .description {
+                text-align: right;
+
+                @media screen and (max-width: $break-sm) {
+                   display: none;
+                }
+            }
         }
 
         .mdi {
@@ -300,4 +351,14 @@
 
 .paypal {
     background-position: -18.79em -.142em;
+}
+
+.search-field {
+    @include display-flex;
+    @include align-items(center);
+
+    input {
+        padding-left: 10px;
+        margin-left: 15px;
+    }
 }
