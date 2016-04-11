@@ -105,6 +105,7 @@
             li {
                 @include display-flex;
                 @include align-items(center);
+                flex-wrap: wrap;
                 border-bottom: 1px solid #D7D9DD;
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -116,6 +117,58 @@
 
             li:last-child {
                 margin-bottom: 1rem;
+            }
+
+            .invitation-container {
+                flex: 1;
+            }
+
+            .invitation-title {
+                text-align: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                div:nth-child(1) {
+                    font-size: 2em;
+                    padding-bottom: 15px;
+                }
+            }
+
+            .panels-container {
+                @include display-flex;
+                @include justify-content(center);
+                flex: 1;
+
+                .panel:nth-child(1) {
+                    margin-right: 10px;
+                }
+
+                .panel:nth-child(2) {
+                    margin-left: 10px;
+                }
+
+                .panel.active {
+                    @extend .z-depth-1;
+                    border-color: $j-blue;
+                }
+
+                .panel {
+                    flex: 1;
+                    text-align: center;
+                    border: 1px solid darken($jb-medium-blue, 10%);
+                    max-width: 340px;
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    transition: all .1s ease-out;
+
+                    .panel-title {
+                        font-weight: bold;
+                        font-size: 1.3em;
+                    }
+                }
             }
 
             .details {
@@ -132,9 +185,12 @@
             }
 
             .role {
+                @include display-flex;
                 margin-right: 15px;
                 flex: 1;
                 text-align: right;
+                position: relative;
+                padding-bottom: 0;
             }
         }
 
