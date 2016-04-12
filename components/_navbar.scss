@@ -34,7 +34,7 @@ nav {
     height: 100%;
   }
 
-  @media #{$large-and-up} {
+  @media #{$medium-and-up} {
     a.button-collapse { display: none; }
   }
 
