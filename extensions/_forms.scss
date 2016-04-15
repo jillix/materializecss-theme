@@ -206,6 +206,14 @@
             }
         }
 
+
+        .billing-profile {
+            width: inherit;
+            img {
+                margin-left: 0 !important;
+            }
+        }
+
         .flex-input-field {
             @include display-flex;
             @include justify-content(space-between);
@@ -231,7 +239,7 @@
         }
 
         .mdi {
-            font-size: 25px;
+            font-size: 20px;
             transition: all .2s ease-out;
 
             &.rotate {
@@ -436,3 +444,10 @@
         margin-left: 15px;
     }
 }
+
+.input-field {
+    .mdi-close {
+        cursor: pointer;
+    }
+}
+
