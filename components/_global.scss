@@ -547,8 +547,8 @@ td, th{
     }
 
     &.active {
-      background-color: $collection-active-bg-color;
-      color: $collection-active-color;
+      background-color: $jb-dark-grey;
+      color: $jb-light-blue;
 
       .secondary-content {
         color: #fff;
@@ -558,7 +558,7 @@ td, th{
   a.collection-item{
     display: block;
     transition: .25s;
-    color: $collection-link-color;
+    color: $jb-dark-grey;
     &:not(.active) {
       &:hover {
         background-color: $collection-hover-bg-color;
