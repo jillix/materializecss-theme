@@ -7,6 +7,7 @@ $linkColorLast: lighten($jb-dark-grey, 15%);
     color: $jb-dark-grey;
     margin-bottom: 1px;
 
+
     ul {
         margin: 0;
 
@@ -153,10 +154,10 @@ $linkColorLast: lighten($jb-dark-grey, 15%);
 // Breadcrumbs s1 links
 .breadcrumb-links {
     padding-right: 20px;
-}
 
-a {
-    color: $jb-dark-grey;
+    a {
+        color: $jb-dark-grey;
+    }
 }
 
 .breadcrumb-links {
