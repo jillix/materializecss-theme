@@ -4,6 +4,69 @@
     }
 }
 
+.card-description {
+    flex: 1;
+    @include align-items(center);
+    @include display-flex;
+    @include flex-wrap(wrap);
+    img {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+.card-shape {
+    width: 222px;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(128,128,128,1) 0%, rgba(59,59,59,1) 49%, rgba(48,48,48,1) 68%, rgba(31,31,31,1) 100%);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 25px;
+
+    .card-overlay {
+        width: 246px;
+        height: 150px;
+        background: white;
+        opacity: .05;
+        position: absolute;
+        transform: rotateZ(-13deg) translateY(-95px);
+    }
+
+    .card-details {
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+
+    .card-details-container {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .card-number {
+        padding-top: 72px;
+        margin-bottom: 7px;
+        text-align: right;
+        font-size: 1.5rem;
+    }
+
+}
+
+.manage-card {
+    flex: 1;
+}
+
+.card-description-container {
+    padding-left: 40px;
+    div:nth-child(1) {
+        font-size: 1.3rem;
+    }
+}
+
 .material-form {
 
     .table-title {
