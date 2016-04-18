@@ -99,7 +99,11 @@
             left: 0;
         }
 
-        .users-list {
+        .users-list-single {
+            margin-bottom: 40px;
+        }
+
+        .users-list, .users-list-single {
             width: 100%;
 
             li {
