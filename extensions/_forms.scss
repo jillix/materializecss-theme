@@ -5,7 +5,6 @@
 }
 
 .card-description {
-    flex: 1;
     @include align-items(center);
     @include display-flex;
     @include flex-wrap(wrap);
@@ -26,6 +25,7 @@
     border-radius: 10px;
     position: relative;
     margin-bottom: 25px;
+    margin-right: 30px;
 
     .card-overlay {
         width: 246px;
@@ -61,7 +61,7 @@
 }
 
 .card-description-container {
-    padding-left: 40px;
+    margin-bottom: 25px;
     div:nth-child(1) {
         font-size: 1.3rem;
     }
@@ -480,6 +480,15 @@
     height: 2.8em;
     width: 4.3em;
     display: inline-block;
+}
+
+.card-type.payment {
+    margin-left: 40px;
+
+    @media screen and (max-width: $break-xs) {
+        padding-top: 10px;
+        margin-left: 0;
+    }
 }
 
 .visa {
