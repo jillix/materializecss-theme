@@ -532,6 +532,23 @@
     @include display-flex;
     margin-bottom: 0;
     border: 0;
+    border-bottom: 1px solid #f3f6fa;
+
+    li {
+        padding: 0 !important;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        background-color: $jb-medium-blue;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collection-item {
+        margin-bottom: -4px;
+    }
 
     .collection-item:last-child {
         border-top: none;
