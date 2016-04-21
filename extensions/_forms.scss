@@ -585,7 +585,16 @@
 
 }
 
+.c-c-container {
+    flex: 1;
+}
+
+.cards-listing {
+    margin-top: 30px;
+}
+
 .horizontal-collection-container {
+    display: block !important;
     margin-top: 0;
     border-left: 1px solid $jb-light-blue;
     border-right: 1px solid $jb-light-blue;
