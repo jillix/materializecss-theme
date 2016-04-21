@@ -528,11 +528,12 @@
 }
 
 // Vertical collections
-.vertical-collection {
+.horizontal-collection {
     @include display-flex;
     margin-bottom: 0;
     border: 0;
     border-bottom: 1px solid #f3f6fa;
+    overflow: visible;
 
     li {
         padding: 0 !important;
@@ -544,6 +545,8 @@
         background-color: $jb-medium-blue;
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .collection-item {
@@ -552,11 +555,11 @@
 
     .collection-item:last-child {
         border-top: none;
-        border-bottom: 1px solid #f3f6fa;
+        border-bottom: none;
     }
 
     .collection-item:nth-last-child(2) {
-        border-bottom: 1px solid #f3f6fa;
+        border-bottom: none;
     }
 
     .collection-item.active {
@@ -570,7 +573,7 @@
 
 }
 
-.vertical-collection-container {
+.horizontal-collection-container {
     margin-top: 0;
     border-left: 2px solid #f3f6fa;
     border-right: 2px solid #f3f6fa;
