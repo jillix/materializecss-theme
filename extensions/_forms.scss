@@ -543,39 +543,52 @@
         position: relative;
         display: block;
         background-color: $jb-medium-blue;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding: 10px 20px 10px 20px;
+        color: $jb-dark-grey;
+        font-size: 1rem;
+
+        @media screen and (max-width: $break-sm) {
+            padding: 10px;
+        }
     }
 
     .collection-item {
-        margin-bottom: -4px;
+        margin-bottom: -1px;
+        border-bottom: 1px solid $jb-light-blue;
+    }
+
+    .collection-item:first-child {
+        border-top: 0;
+        border-bottom: 1px solid $jb-light-blue;
     }
 
     .collection-item:last-child {
         border-top: none;
-        border-bottom: none;
+        border-bottom: 1px solid $jb-light-blue;
     }
 
     .collection-item:nth-last-child(2) {
-        border-bottom: none;
+        border-bottom: 1px solid $jb-light-blue;
     }
 
     .collection-item.active {
         background: $jb-medium-blue;
-        color: $j-blue;
-        border-top: 2px solid darken($j-blue, 4%);
-        border-left: 2px solid #f3f6fa;
-        border-right: 2px solid #f3f6fa;
+        border-top: 1px solid darken($j-blue, 4%);
+        border-left: 2px solid $jb-light-blue;
+        border-right: 2px solid $jb-light-blue;
         border-bottom: 0;
+
+        a {
+            color: $j-blue;
+        }
     }
 
 }
 
 .horizontal-collection-container {
     margin-top: 0;
-    border-left: 2px solid #f3f6fa;
-    border-right: 2px solid #f3f6fa;
-    border-bottom: 2px solid #f3f6fa;
+    border-left: 1px solid $jb-light-blue;
+    border-right: 1px solid $jb-light-blue;
+    border-bottom: 1px solid $jb-light-blue;
+    padding: 25px;
 }
