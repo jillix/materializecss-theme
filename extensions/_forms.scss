@@ -527,3 +527,35 @@
     }
 }
 
+// Vertical collections
+.vertical-collection {
+    @include display-flex;
+    margin-bottom: 0;
+    border: 0;
+
+    .collection-item:last-child {
+        border-top: none;
+        border-bottom: 1px solid #f3f6fa;
+    }
+
+    .collection-item:nth-last-child(2) {
+        border-bottom: 1px solid #f3f6fa;
+    }
+
+    .collection-item.active {
+        background: $jb-medium-blue;
+        color: $j-blue;
+        border-top: 2px solid darken($j-blue, 4%);
+        border-left: 2px solid #f3f6fa;
+        border-right: 2px solid #f3f6fa;
+        border-bottom: 0;
+    }
+
+}
+
+.vertical-collection-container {
+    margin-top: 0;
+    border-left: 2px solid #f3f6fa;
+    border-right: 2px solid #f3f6fa;
+    border-bottom: 2px solid #f3f6fa;
+}
