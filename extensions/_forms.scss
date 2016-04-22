@@ -552,6 +552,11 @@
         }
     }
 
+    .bitcoin-img {
+        width: 75px;
+        padding-top: 3px;
+    }
+
     .collection-item {
         margin-bottom: -1px;
         border-bottom: 1px solid $jb-light-blue;
@@ -594,7 +599,7 @@
 }
 
 .horizontal-collection-container {
-    display: block !important;
+    display: block;
     margin-top: 0;
     border-left: 1px solid $jb-light-blue;
     border-right: 1px solid $jb-light-blue;
