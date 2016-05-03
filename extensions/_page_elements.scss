@@ -9,18 +9,6 @@
     @include flex-wrap(wrap);
 }
 
-.page-header {
-    @include display-flex;
-    @include align-items(center);
-    background: $page-header;
-    color: white;
-    height: 56px;
-
-    h5 {
-        margin: 0;
-    }
-}
-
 #page-content {
     @include display-flex;
     @include flex-direction(column);
@@ -62,11 +50,6 @@
             cursor: pointer;
         }
     }
-}
-
-.big-jillix-logo {
-    width: 100%;
-    max-width: 240px;
 }
 
 .list-container {

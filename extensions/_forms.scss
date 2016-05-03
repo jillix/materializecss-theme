@@ -86,7 +86,7 @@
     .sub-icon:hover {
         color: $jb-dark-grey;
         transition: all .2s ease-out ;
-        @extend .pointer;
+        cursor: pointer;
     }
 
     label {
@@ -278,14 +278,6 @@
             }
         }
 
-
-        .billing-profile {
-            width: inherit;
-            img {
-                margin-left: 0 !important;
-            }
-        }
-
         .flex-input-field {
             @include display-flex;
             @include justify-content(space-between);
@@ -319,11 +311,6 @@
             }
         }
     }
-
-    .pointer {
-        cursor: pointer;
-    }
-
 
     .status-text {
         font-size: 18px;
@@ -466,27 +453,6 @@
     @include transform(rotateY(-180deg));
 }
 
-.login-form {
-    margin-top: 100px !important;
-    border: 1px solid #e1e1e1;
-}
-
-.payment-cards {
-    padding-left: 0;
-}
-
-.payment-cards li {
-    font-size: 10px; // <=== Edit this to change the size of cards
-    display: inline-block;
-    margin-right: .25em;
-    background-image: url(http://imgh.us/payment-cards2.svg);
-    background-size: 23.077em;
-    background-repeat: no-repeat;
-    height: 2.8em;
-    width: 4.3em;
-    display: inline-block;
-}
-
 .card-type.payment {
     margin-left: 40px;
 
@@ -494,26 +460,6 @@
         padding-top: 10px;
         margin-left: 0;
     }
-}
-
-.visa {
-    background-position: -.07em -.142em;
-}
-
-.mastercard {
-    background-position: -4.756em -.142em;
-}
-
-.amex {
-    background-position: -9.44em -.142em;
-}
-
-.discover {
-    background-position: -14.13em -.142em;
-}
-
-.paypal {
-    background-position: -18.79em -.142em;
 }
 
 .search-field {

@@ -7,15 +7,6 @@
     }
 }
 
-.public-brand {
-    margin-left: 6em;
-    flex: 1;
-}
-
-.public-brand img {
-    width: 9.5em;
-}
-
 .main-nav {
     z-index: 2;
     .to-hide-nav li {
@@ -67,42 +58,11 @@
        }
 }
 
-.to-hide-nav {
-    @media screen and (max-width: $break-sm) {
-        display: none;
-    }
-}
-
-.small-screen {
-    ul {
-        padding-left: 0;
-        margin-top: 0;
-        li {
-            text-align: center;
-            padding-top: 8px;
-            padding-bottom: 10px;
-        }
-    }
-    @media screen and (min-width: $break-sm) {
-        display: none;
-    }
-}
-
-.navbar-container {
-    @include display-flex;
-    @include justify-content(space-between);
-    @include align-items(center);
-}
-
 .menu-icon {
     width: 40px;
     cursor: pointer;
     vertical-align: middle;
     margin-right: 20px;
-}
-
-.show {
-    display: block;
 }
 
 .img-btn {
@@ -113,29 +73,6 @@
 
 nav .octicon {
     padding-left: 5px;
-}
-
-.direction-arrow {
-    width: 0px;
-    height: 0px;
-    border-left: 8.5px solid transparent;
-    border-right: 8.5px solid transparent;
-    border-bottom: 8.5px solid #9da3b9;
-    position: absolute;
-    top: 56px;
-    right: 53px;
-}
-
-.direction-arrow-b {
-    width: 0px;
-    height: 0px;
-    border-left: 8.5px solid transparent;
-    border-right: 8.5px solid transparent;
-    border-bottom: 8.5px solid $jb-dark-grey;
-    position: absolute;
-    top: 57px;
-    right: 53px;
-    z-index: 5;
 }
 
 .direction-toggle {
@@ -168,14 +105,6 @@ nav .octicon {
         right: 0px;
     }
 
-    .direction-arrow {
-        right: 30px;
-    }
-
-    .direction-arrow-b {
-        right: 30px;;
-    }
-
     .card {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.55), 0 2px 10px 0 rgba(0, 0, 0, 0.5);
         border: 0;
@@ -198,21 +127,6 @@ $arrow-angle: 24px;
     display: none;
 }
 
-.navbar-s1 {
-    @include display-flex;
-    @include align-items(center);
-    background: $jb-medium-blue;
-    z-index: 1;
-    @extend .z-depth-1;
-    color: #444;
-    height: 35px;
-
-    a {
-        color: $jb-dark-grey;
-    }
-
-}
-
 .navbar-s2 {
     @include display-flex;
     @include align-items(center);
@@ -222,5 +136,4 @@ $arrow-angle: 24px;
 
     background: $jb-medium-blue;
     @extend .z-depth-1;
-
 }

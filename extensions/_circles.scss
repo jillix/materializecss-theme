@@ -51,20 +51,12 @@
     flex: 0;
 }
 
-.circle-readme {
-    position: absolute;
-    font-size: 14px;
-    color: white;
-    top: 110px;
-    left: 40px;
-    text-decoration: underline;
-}
-
-.circle-builder, .circle-deployment, .circle-settings {
+.circle-settings {
     font-size: 15px;
     margin: 5px;
 }
-.circle-builder:hover, .circle-deployment:hover, .circle-settings:hover {
+
+.circle-settings:hover {
     text-decoration: underline;
 }
 
@@ -179,7 +171,7 @@
     @extend .z-depth-1;
     transition: .2s ease-out;
     opacity: 0;
-    @extend .pointer;
+    cursor: pointer;
 
     &:hover {
         @extend .z-depth-2;
@@ -217,19 +209,6 @@
 
         &.active {
             opacity: 100;
-        }
-    }
-}
-
-.versions-container {
-    .circle-list-item {
-
-        span {
-            color: $jb-medium-blue;
-        }
-
-        span.octicon-triangle-right {
-            margin-left: 4px;
         }
     }
 }

@@ -36,10 +36,6 @@ $flex-start: flex-start;
     @include justify-content($flex-start !important);
 }
 
-.pointer {
-    cursor: pointer;
-}
-
 // Color classes
 .jb-dark-grey { background: $jb-dark-grey; }
 .j-red { background: $j-red; }
